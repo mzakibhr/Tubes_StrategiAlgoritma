@@ -26,7 +26,8 @@ def maxGameByWinnerBruteForce(N):
     start = timeit.default_timer()
     jumlahpermainan = 0 #jumlah permainan dimulai dari 0 permainan
     # akan dilakukan loop sampai pemain kurang dari 2 pemain
-    while N >= 2: 
+    i = 2
+    while i <= n:
         N = N/2
         jumlahpermainan = jumlahpermainan + 1
         if N % 2 != 0: # jika ganjil maka pemain akan dibulatkan untuk permainan selanjutnya
